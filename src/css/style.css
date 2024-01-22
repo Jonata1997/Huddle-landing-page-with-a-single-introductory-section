@@ -1,0 +1,164 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--neutral-medium);
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.social {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.logo {
+    align-self: flex-start;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 2rem;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.introduction h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    color: #fff;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 15px 50px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--neutral-soft);
+    color: #fff;
+}
+
+.social {
+    width: 90%;
+    display: flex;
+    padding: 50px 0;
+    justify-content: flex-end;
+}
+
+.social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    transition: 0.3s;
+}
+
+.social i:hover {
+    color: var(--neutral-soft);
+}
+
+.attribution {
+    color: #fff;
+}
+
+.attribution a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.attribution a:hover {
+    color: var(--neutral-soft);
+}
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .introduction {
+        width: 100%;
+        text-align: center;
+    }
+
+    .introduction h1 {
+        font-size: 30px;
+    }
+
+    .button {
+        padding: 15px 80px;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .illustration img {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .social {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .introduction h1 {
+      line-height: 1.5;
+      font-size: 26px;
+    }
+  
+    .introduction a {
+      padding: 10px 70px;
+    }
+
+    .attribution {
+        text-align: center;
+        margin-top: 43px;
+    }
+  }
